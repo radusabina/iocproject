@@ -41,38 +41,25 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aliniem butoanele la stânga */
+  margin-top: 100px; /* Spațiu între header și butoane */
+  width: 100%; /* Asigurăm că butoanele ocupă lățimea completă */
+}
 
-.adunare {
+.button-container button {
   font-size: 30px;
   padding: 10px 20px;
   margin: 10px 0;
-  text-align: left;
-  margin: 20px 0;
-  margin-right: 700px;
-  margin-top: 250px;
   font-weight: bold;
   background-color: #c5d5e2;
   border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.scadere {
-  font-size: 30px;
-  padding: 10px 20px;
-  text-align: left;
-  margin: 20px 0;
-  margin-right: 700px;
-  font-weight: bold;
-  background-color: #c5d5e2;
-  border-radius: 12px;
-}
-
-.combinate {
-  font-size: 30px;
-  padding: 10px 20px;
-  text-align: left;
-  margin: 20px 0;
-  margin-right: 700px;
-  font-weight: bold;
-  background-color: #c5d5e2;
-  border-radius: 12px;
+.button-container button:hover {
+  background-color: #a9c3d0;
 }
