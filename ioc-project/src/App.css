@@ -1,20 +1,38 @@
 .App {
-  text-align: center;
+  background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
+  background-size: cover;
 }
 
-.App-logo {
+.app-logo {
   height: 40vmin;
-  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+.game-text {
+  top: 230px;
+  height: 40vmin;
+  position: absolute;
+  color: #740f8a;
+  left: 200px;
+  margin: 10px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.scooby-picture {
+  height: 80vmin;
+  mix-blend-mode: multiply;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+.second-line {
+  padding-left: 20px;
+}
+.app-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +42,37 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.adunare {
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: left;
+  margin: 20px 0;
+  margin-right: 700px;
+  margin-top: 250px;
+  font-weight: bold;
+  background-color: #c5d5e2;
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scadere {
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: left;
+  margin: 20px 0;
+  margin-right: 700px;
+  font-weight: bold;
+  background-color: #c5d5e2;
+  border-radius: 12px;
+}
+
+.combinate {
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: left;
+  margin: 20px 0;
+  margin-right: 700px;
+  font-weight: bold;
+  background-color: #c5d5e2;
+  border-radius: 12px;
 }
