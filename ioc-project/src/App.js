@@ -1,6 +1,15 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./App.css";
+import AdunarePage from './AdunarePage';
 
 function App() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (ruta) => {
+    navigate(ruta);
+  };
+
   return (
     <div className="App">
       <header className="app-header">
@@ -9,10 +18,10 @@ function App() {
           className="app-logo"
           alt="logo"
         />
-        <div class="game-text">
+        <div className="game-text">
           Învață cu mine adunarea și scăderea
-          <br></br>
-          <span class="second-line">numerelor naturale de la 0 la 1000</span>
+          <br />
+          <span className="second-line">numerelor naturale de la 0 la 1000</span>
         </div>
 
         <img
@@ -21,18 +30,11 @@ function App() {
           alt="scooby-picture"
         />
 
-        <button className="adunare" type="button">
-          {" "}
-          Adunare{" "}
-        </button>
-        <button className="scadere" type="button">
-          {" "}
-          Scădere{" "}
-        </button>
-        <button className="combinate" type="button">
-          {" "}
-          Operații combinate{" "}
-        </button>
+        <div className="button-container">
+          <button onClick={() => handleButtonClick("/adunare")}>Adunare</button>
+          <button onClick={() => handleButtonClick("/scadere")}>Scădere</button>
+          <button onClick={() => handleButtonClick("/combinate")}>Operații combinate</button>
+        </div>
       </header>
     </div>
   );

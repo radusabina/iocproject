@@ -1,0 +1,62 @@
+/* AdunarePage.css */
+
+.AdunarePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .app-logo {
+    height: 40vmin;
+    margin: 10px;
+    mix-blend-mode: multiply;
+  }
+  
+  h2 {
+    color: black;
+    margin-top: 100px; /* Adaugăm spațiu între logo și titlu */
+  }
+  
+  p {
+    color: black;
+  }
+  
+  strong {
+    color: #740f8a;
+  }
+  
+  input {
+    font-size: 16px;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid #740f8a;
+    border-radius: 4px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #c5d5e2;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #a9c3d0;
+  }
+  
+  .scooby-picture {
+    height: 80vmin;
+    mix-blend-mode: multiply;
+    margin-top: 50px; /* Adaugăm spațiu între conținut și imaginea Scooby */
+  }
+  
