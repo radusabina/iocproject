@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 import AdunarePage from './AdunarePage';
+import ScaderePage from "./ScaderePage";
 
 function App() {
   const navigate = useNavigate();
