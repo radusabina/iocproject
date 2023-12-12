@@ -1,0 +1,85 @@
+/* ScaderePage.css */
+.start{
+    background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+.ScaderePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+
+  }
+  
+  .app-logo {
+    height: 40vmin;
+    margin: 10px;
+    mix-blend-mode: multiply;
+  }
+  
+  h2 {
+    color: black;
+    color: #d7994e;
+    margin-top: 20px;
+    font-family: system-ui;
+    font-size: 100px;
+  }
+  
+  p {
+    color: black;
+    margin-top: -50px;
+    font-size: 30px;
+  }
+  
+  strong {
+    color: #d7994e;
+  }
+  
+  input {
+    font-size: 16px;
+    padding: 7px;
+    margin: -2px;
+    border: 4px solid #d7994e;
+    border-radius: 4px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #c5d5e2;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #a9c3d0;
+  }
+  
+  .scooby-picture {
+    height: 80vmin;
+    mix-blend-mode: multiply;
+    margin-top: 50px; /* Adaugăm spațiu între conținut și imaginea Scooby */
+  }
+  
+  .numar-container{
+    font-size: 70px;
+  }
+  .scadere-container{
+    padding-left: 300px;
+    color: #d7994e;
+ 
+  }
+  .pozamesaj{
+    margin-top: 20px;
+  }
+  @media screen {
+ /*de implementat pe final  */
+  }
+ 
+  
