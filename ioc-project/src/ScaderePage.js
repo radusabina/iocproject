@@ -18,7 +18,8 @@ function ScaderePage() {
     setNumar1(randomNumar1);
     setNumar2(randomNumar2);
     setRezultat("");
-    setRezultatCorect(null); // Resetăm indicatorul de rezultat corect
+      setRezultatCorect(null); // Resetăm indicatorul de rezultat corect
+    //test
   };
 
   const calculeazaRezultat = () => {
