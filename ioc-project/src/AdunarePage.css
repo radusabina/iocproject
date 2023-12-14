@@ -1,62 +1,105 @@
 /* AdunarePage.css */
-
+.start1 {
+  background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
 .AdunarePage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
-    background-size: cover;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.app-logo {
+  height: 40vmin;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
+
+.AdunarePage h2 {
+  color: #7f0aa9; /* Culoare violet pentru Adunare */
+  margin-top: 20px;
+  font-family: system-ui;
+  font-size: 100px;
+}
+
+.AdunarePage p {
+  color: black;
+  margin-top: -50px;
+  font-size: 30px;
+}
+
+.AdunarePage strong {
+  color: #740f8a; /* Culoare violet închis pentru strong */
+}
+
+.AdunarePage input {
+  font-size: 16px;
+  padding: 7px;
+  margin: -2px;
+  border: 4px solid #6a056d; /* Culoare violet pentru Adunare */
+  border-radius: 4px;
+}
+
+.AdunarePage button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  background-color: #c5d5e2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.AdunarePage button:hover {
+  background-color: #a9c3d0;
+}
+
+.scooby-picture {
+  height: 80vmin;
+  mix-blend-mode: multiply;
+  margin-top: 50px;
+}
+
+.numere-container {
+  padding-left: 300px;
+  color: #7f0aa9; /* Culoare violet pentru Adunare */
+}
+
+.numar {
+  font-size: 70px;
+}
+
+.align{
+  align-items: center;
+}
+
+
+.poza {
   
-  .app-logo {
-    height: 40vmin;
-    margin: 10px;
-    mix-blend-mode: multiply;
-  }
-  
-  h2 {
-    color: black;
-    margin-top: 100px; /* Adaugăm spațiu între logo și titlu */
-  }
-  
-  p {
-    color: black;
-  }
-  
-  strong {
-    color: #740f8a;
-  }
-  
-  input {
-    font-size: 16px;
-    padding: 8px;
-    margin: 10px;
-    border: 2px solid #740f8a;
-    border-radius: 4px;
-  }
-  
-  button {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
-    font-weight: bold;
-    background-color: #c5d5e2;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #a9c3d0;
-  }
-  
-  .scooby-picture {
-    height: 80vmin;
-    mix-blend-mode: multiply;
-    margin-top: 50px; /* Adaugăm spațiu între conținut și imaginea Scooby */
-  }
-  
+  margin-top: 40px;
+}
+.align-right {
+  margin-right: 700px;
+}
+
+.go-to-start-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #7d0099;
+  /* Culoare mov pentru butonul "Back" la Adunare */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-to-start-button:hover {
+  background-color: #7d0099;
+}
