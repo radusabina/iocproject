@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./App.css";
 import AdunarePage from './AdunarePage';
 import ScaderePage from "./ScaderePage";
+import CombinatePage from "./CombinatePage";
 
 function App() {
   const navigate = useNavigate();
