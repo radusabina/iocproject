@@ -12,17 +12,21 @@ function ScaderePage() {
   }, []); // Se execută o singură dată la încărcarea componentei
 
   const genereazaNumereRandom = () => {
-    const randomNumar1 = Math.floor(Math.random() * 1001);
-    const randomNumar2 = Math.floor(Math.random() * randomNumar1);
+    let randomNumar1, randomNumar2;
+
+    do {
+      randomNumar1 = Math.floor(Math.random() * 1000);
+      randomNumar2 = Math.floor(Math.random() * randomNumar1);
+    } while (randomNumar1 + randomNumar2 > 1000);
 
     setNumar1(randomNumar1);
     setNumar2(randomNumar2);
     setRezultat("");
-      setRezultatCorect(null); // Resetăm indicatorul de rezultat corect
+    setRezultatCorect(null); // Resetăm indicatorul de rezultat corect
   };
 
   const calculeazaRezultat = () => {
-    const diferenta = numar1 - numar2;     
+    const diferenta = numar1 - numar2;
 
     setRezultat(diferenta.toString());
     // Verificăm dacă rezultatul este corect și setăm indicatorul
@@ -34,47 +38,55 @@ function ScaderePage() {
     if (rezultatCorect === true) {
       genereazaNumereRandom();
     }
-    // else 
+    // else
     // if(rezultatCorect === false)
     // {
     //   setRezultat("")
     // }
   };
 
-
   return (
     <div className="start">
-    <div className="ScaderePage">
-      <img
-        src="https://i.postimg.cc/jSFK8kBw/temp-Imagex-Jlx5r.jpg"
-        className="app-logo"
-        alt="logo"
-      />
-      <img
-        src="https://i.postimg.cc/13rkV7rV/temp-Imageo0j-Mhs.jpg"
-        className="scooby-picture"
-        alt="scooby-picture"
-      />
-      <h2>Scădere</h2>
-      <p>
-        Calculează diferența dintre următoarele două numere și scrie rezultatul.
-      </p>
+      <div className="ScaderePage">
+        <img
+          src="https://i.postimg.cc/jSFK8kBw/temp-Imagex-Jlx5r.jpg"
+          className="app-logo"
+          alt="logo"
+        />
+        <img
+          src="https://i.postimg.cc/13rkV7rV/temp-Imageo0j-Mhs.jpg"
+          className="scooby-picture"
+          alt="scooby-picture"
+        />
+        <h2>Scădere</h2>
+        <p>
+          Calculează diferența dintre următoarele două numere și scrie
+          rezultatul.
+        </p>
       </div>
       <div className="scadere-container">
-      <div >
-        <div className="numar-container">
-          <strong>{numar1}</strong> -
-        </div>
-        <div className="numar-container">
-          <strong>{numar2}</strong>
+        <div>
+          <div className="numar-container">
+            <strong>{numar1}</strong> -
+          </div>
+          <div className="numar-container">
+            <strong>{numar2}</strong>
+          </div>
+
+          <div
+            style={{
+              fontSize: "16px",
+              fontWeight: "bold",
+              borderBottom: "10px solid #d7994e",
+              width: "110px",
+              display: "inline-block",
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
         </div>
 
-        <div style={{ fontSize: '16px', fontWeight: 'bold', borderBottom: '10px solid #d7994e', width: '110px', display: 'inline-block'}}>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  	    </div>
-      </div>
-      
-      <input
+        <input
           type="number"
           value={rezultat}
           onChange={(e) => setRezultat(e.target.value)}
@@ -102,7 +114,7 @@ function ScaderePage() {
           </div>
         )}
       </div>
-      </div>
+    </div>
   );
 }
 

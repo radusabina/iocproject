@@ -1,4 +1,4 @@
-.App {
+.start {
   background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
   background-size: cover;
 }
@@ -14,10 +14,8 @@
 .game-text {
   top: 230px;
   max-height: 40vmin;
-  position: absolute;
   color: #740f8a;
   left: 200px;
-  margin: 10px;
   font-weight: bold;
 }
 
