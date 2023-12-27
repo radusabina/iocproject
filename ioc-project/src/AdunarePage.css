@@ -1,4 +1,3 @@
-/* AdunarePage.css */
 .start1 {
   background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
   background-size: cover;
@@ -11,22 +10,22 @@
   padding: 20px;
   margin-top: 20px;
 }
+.container {
+  align-items: center;
+  margin-top: 100px;
+}
 .app-logo {
   height: 40vmin;
   margin: 10px;
   mix-blend-mode: multiply;
 }
 
-.AdunarePage h2 {
+.message {
   color: #7f0aa9; /* Culoare violet pentru Adunare */
-  margin-top: 20px;
-  font-family: system-ui;
-  font-size: 100px;
-}
-
-.AdunarePage p {
-  color: black;
-  margin-top: -50px;
+  margin-top: 200px;
+  margin-left: 10px;
+  font-family: Cambria;
+  font-style: initial;
   font-size: 30px;
 }
 
@@ -54,35 +53,52 @@
   transition: background-color 0.3s ease;
 }
 
-
 .AdunarePage button:hover {
   background-color: #a9c3d0;
 }
 
-.scooby-picture {
-  height: 80vmin;
-  mix-blend-mode: multiply;
-  margin-top: 50px;
+.numere-container {
+  padding-top: -10px;
+  padding-right: 700px;
+  color: #7f0aa9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.numere-container {
-  padding-left: 300px;
-  color: #7f0aa9; /* Culoare violet pentru Adunare */
+.content-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; /* Sau orice valoare doriti */
+}
+
+.align-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.numar {
+  margin-bottom: 10px;
+}
+
+.game-photo {
+  margin-left: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .numar {
   font-size: 70px;
 }
 
-.align{
+.align {
   align-items: center;
 }
 
-
-.poza {
-  
-  margin-top: 40px;
-}
 .align-right {
   margin-right: 700px;
 }
@@ -102,4 +118,10 @@
 
 .go-to-start-button:hover {
   background-color: #7d0099;
+}
+
+.mesaj-eroare {
+  padding-top: 20px;
+  font-size: xx-small;
+  padding-left: 350px;
 }
