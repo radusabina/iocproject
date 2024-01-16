@@ -5,9 +5,79 @@ import "./ChooseMistery.css";
 function ChooseMistery() {
   var operation = sessionStorage.getItem("operation");
 
-  const misteryAloha = [];
+  const misteryAloha = [
+    [
+      "Echipa misterelor ajunge pe plajele însorite din Hawaii pentru un cunoscut concurs de surf.",
+      "https://i.postimg.cc/NFhdHdX9/temp-Image0-Shus-U.jpg",
+    ],
+    [
+      "În timp ce își cumpărau un totem Wiki-Tiki, află de la cel mai bun surfer al insulei că o fată, Snookie, a fost răpită de Wiki-Tiki.",
+      "https://i.postimg.cc/mkYWzzP4/temp-Imagewwk-OTV.jpg",
+    ],
+    [
+      "Seara, se strâng cu toții la petrecerea de pe plajă.",
+      "https://i.postimg.cc/QxM3mqn9/temp-Imagef-Nnu8-T.jpg",
+    ],
+    [
+      "Petrecerea este întreruptă de micii Wiki-Tiki. După ce se retrag, gașca lui Scooby-Doo decide să rezolve misterul.",
+      "https://i.postimg.cc/CLJKL19D/temp-Imageknq-Lj-P.jpg",
+    ],
+    [
+      "Următoarea zi, pornesc prin junglă spre vulcan și reușesc să mai adune câteva indicii pe drum.",
+      "https://i.postimg.cc/W3fnvTTP/temp-Image-Dca-B3i.jpg",
+    ],
+    [
+      "În interiorul vulcanului, se întâlnesc cu Wiki-Tiki, însă reușesc să scape și să o salveze pe Snookie.",
+      "https://i.postimg.cc/vTt5mydB/temp-Image48pti4.jpg",
+    ],
+    [
+      "În timp ce încearcă să iasă din vulcan, echipa misterelor se întâlnește cu foarte mulți șerpi. Reușesc să treacă de aceștia datorită cântecului la mandolină al lui Shaggy.",
+      "https://i.postimg.cc/bYnZ9pWS/temp-Image0-ZOw55.jpg",
+    ],
+    [
+      "Următoarea zi, la concursul de surf, apare Wiki-Tiki din nou, însă este prins de un val și adus la mal.",
+      "https://i.postimg.cc/3J4C5skg/temp-Image-Ye4y6n.jpg",
+    ],
+    [
+      "Echipa misterelor dezvăluie că Wiki-Tiki era cel mai bun surfer de pe insulă, care își dorea să sperie localnicii pentru a cumpăra casele lor la un preț mic.",
+      "https://i.postimg.cc/PqRYRKd6/temp-Imagel-UHqns.jpg",
+    ],
+    [
+      "Scooby-Doo câștigă concursul de surf, iar gașca se bucură în liniște de vacanță.",
+      "https://i.postimg.cc/1t15XNBm/temp-Imagevq-Wc6-G.jpg",
+    ],
+  ];
 
-  const misteryLochNess = [];
+  const misteryLochNess = [
+    [
+      "Scooby-Doo și echipa Misterelor merg la Loch Ness în Scoția să o viziteze pe verișoara lui Daphne la faimosul castel Blake.",
+      "https://i.postimg.cc/v8N3B6cT/temp-Image-Kbzorl.jpg",
+    ],
+    [
+      "Seara, Scooby-Doo și Shaggy merg să caute bucătăria pentru o gustare târzie.",
+      "https://i.postimg.cc/QMkbmYBm/temp-Image-YUcb-DK.jpg",
+    ],
+    [
+      "Ei sunt atacați de monstrul din Loch Ness, iar gașca decide să rezolve misterul.",
+      "https://i.postimg.cc/fTdDLYSZ/temp-Imagem27-WDc.jpg",
+    ],
+    [
+      "Ajutați de verișoara lui Daphne, echipa ia un submarin și merge în mare pentru a căuta indicii.",
+      "https://i.postimg.cc/1tHZxZtj/temp-Image-Ao5-RWb.jpg",
+    ],
+    [
+      "Seara, merg în pădure pentru a găsi mai multe urme ale monstrului din Loch Ness și pun la cale un plan.",
+      "https://i.postimg.cc/pL4jjwP4/temp-Image-Fh-RXh-Y.jpg",
+    ],
+    [
+      "Următoarea seară, se folosesc de Scooby-Doo și Shaggy ca momeală pentru a ademeni monstrul.",
+      "https://i.postimg.cc/hGNNHtcs/temp-Imagev-CIu1g.jpg",
+    ],
+    [
+      "Reușesc să prindă monstrul și află că erau frații Haggart, care voiau să facă o farsă.",
+      "https://i.postimg.cc/fyVCZxC0/temp-Imagef-NC4lz.jpg",
+    ],
+  ];
 
   const misteryHauntedHolidays = [
     [
@@ -118,17 +188,56 @@ function ChooseMistery() {
     ],
   ];
 
-  const misteryTrickOrTreat = [];
+  const misteryTrickOrTreat = [
+    [
+      "Gașca Misterelor merge la un carnaval de Halloween.",
+      "https://i.postimg.cc/Qdk2SpFb/temp-Imagevrfedj.jpg",
+    ],
+    [
+      "Acolo sunt atacați de o fantomă care seamănă cu Fred.",
+      "https://i.postimg.cc/bwmhpxqv/temp-Image-YSf1-TM.jpg",
+    ],
+    [
+      "Merg la Penitenciarul Coolsville pentru a intervieva pe prietena lor Coco și întâlnesc paznicul, care îi permite lui Coco să plece cu ei.",
+      "https://i.postimg.cc/jjGN3Jw8/temp-Imagec-BTCNU.jpg",
+    ],
+    [
+      "Gașca merge la bibliotecă să mai caute indicii.",
+      "https://i.postimg.cc/mZFvzxyC/temp-Image-Cd-L5xu.jpg",
+    ],
+    [
+      "Sunt atacați de fantome care seamănă cu ei, însă reușesc să scape.",
+      "https://i.postimg.cc/qRtv6m1q/temp-Image-Ghqj-M6.jpg",
+    ],
+    [
+      "Echipa misterelor își face un plan pentru a prinde fantomele într-un conac părăsit.",
+      "https://i.postimg.cc/Fsk0Xpm9/temp-Imagei0-B1y-M.jpg",
+    ],
+    [
+      "Echipa prinde fantomele și descoperă că, de fapt, acestea sunt roboți.",
+      "https://i.postimg.cc/Xvw9rkYw/temp-Imageg-Ei-Dny.jpg",
+    ],
+    [
+      "În spatele planului era Coco, care își dorea să elibereze prizonierii din penitenciar după ce speria pe toată lumea din oraș.",
+      "https://i.postimg.cc/MGFb2pHL/temp-Image-OLUIra.jpg",
+    ],
+    [
+      "Echipa Misterelor se bucură în continuare de sărbătoarea de Halloween.",
+      "https://i.postimg.cc/vTDJ8Bt6/temp-Imageppy-Kw-J.jpg",
+    ],
+  ];
 
   const navigate = useNavigate();
 
   const handleMisteryHauntedHolidaysClick = () => {
     sessionStorage.setItem("mister", JSON.stringify(misteryHauntedHolidays));
+    sessionStorage.setItem("operation", operation);
     navigate(operation);
   };
 
   const handleMisteryPiratesAhoyClick = () => {
     sessionStorage.setItem("mister", JSON.stringify(misteryPiratesAhoy));
+    sessionStorage.setItem("operation", operation);
     navigate(operation);
   };
 
@@ -276,7 +385,7 @@ function ChooseMistery() {
       </button>
       <img
         className="scooby-crew"
-        src="https://i.postimg.cc/0Q4sVrBT/temp-Imageu9i-PFT.jpg"
+        src="https://i.postimg.cc/JzD0C8nd/temp-Image-YIf-Wn-B.jpg"
         alt="scooby-crew"
       />
     </div>

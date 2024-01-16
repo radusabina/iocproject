@@ -1,85 +1,128 @@
-/* ScaderePage.css */
-.start{
-    background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
-    background-size: cover;
-    min-height: 100vh;
+.start {
+  background-image: url("https://i.postimg.cc/fyKB8p26/temp-Image-E06r-Z8.jpg");
+  background-size: cover;
+  min-height: 100vh;
 }
 .ScaderePage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.container-orange {
+  align-items: center;
+  margin-top: 100px;
+}
+.app-logo {
+  height: 40vmin;
+  margin: 10px;
+  mix-blend-mode: multiply;
+}
 
-  }
-  
-  .app-logo {
-    height: 40vmin;
-    margin: 10px;
-    mix-blend-mode: multiply;
-  }
-  
-  h2 {
-    color: black;
-    color: #d7994e;
-    margin-top: 20px;
-    font-family: system-ui;
-    font-size: 100px;
-  }
-  
-  p {
-    color: black;
-    margin-top: -50px;
-    font-size: 30px;
-  }
-  
-  strong {
-    color: #d7994e;
-  }
-  
-  input {
-    font-size: 16px;
-    padding: 7px;
-    margin: -2px;
-    border: 4px solid #d7994e;
-    border-radius: 4px;
-  }
-  
-  button {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
-    font-weight: bold;
-    background-color: #c5d5e2;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #a9c3d0;
-  }
-  
-  .scooby-picture {
-    height: 80vmin;
-    mix-blend-mode: multiply;
-    margin-top: 50px; /* Adaugăm spațiu între conținut și imaginea Scooby */
-  }
-  
-  .numar-container{
-    font-size: 70px;
-  }
-  .scadere-container{
-    padding-left: 300px;
-    color: #d7994e;
- 
-  }
-  .pozamesaj{
-    margin-top: 20px;
-  }
-  @media screen {
- /*de implementat pe final  */
-  }
- 
-  
+.message-orange {
+  color: #f19808; /* Culoare violet pentru Adunare */
+  margin-top: 200px;
+  margin-left: 10px;
+  font-family: Cambria;
+  font-style: initial;
+  font-size: 30px;
+}
+
+.ScaderePage strong {
+  color: #f19808;
+}
+
+.ScaderePage input {
+  font-size: 45px;
+  padding: 7px;
+  margin: -2px;
+  border: 4px solid #f19808;
+  border-radius: 4px;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.ScaderePage button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  background-color: #c5d5e2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ScaderePage button:hover {
+  background-color: #a9c3d0;
+}
+
+.numere-container-orange {
+  padding-top: -10px;
+  padding-right: 700px;
+  color: #f19808;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-container-orange {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.align-left-orange {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.numar-orange {
+  margin-bottom: 10px;
+}
+
+.game-photo {
+  margin-left: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.numar {
+  font-size: 70px;
+  white-space: pre;
+}
+
+.align {
+  align-items: center;
+}
+
+.align-right {
+  margin-right: 700px;
+}
+
+.go-to-start-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #7d0099;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-to-start-button:hover {
+  background-color: #7d0099;
+}
+
+.mesaj-eroare {
+  font-size: medium;
+  padding-left: 400px;
+}

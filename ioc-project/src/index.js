@@ -8,6 +8,7 @@ import ScaderePage from "./ScaderePage";
 import CombinatePage from "./CombinatePage";
 import Instructions from "./Instructions";
 import ChooseMistery from "./ChooseMistery";
+import CongratsPage from "./CongratsPage";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <Route path="/combinate" element={<CombinatePage />} />
         <Route path="/Instructions" element={<Instructions />} />
         <Route path="/ChooseMistery" element={<ChooseMistery />} />
+        <Route path="/CongratsPage" element={<CongratsPage />} />
       </Routes>
     </Router>
   );

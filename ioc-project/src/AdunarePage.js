@@ -7,6 +7,8 @@ function AdunarePage() {
   const [numar2, setNumar2] = useState(0);
   const [rezultat, setRezultat] = useState("");
   const [incercari, setIncercari] = useState(0);
+  const [nr1, setNr1] = useState("");
+  const [nr2, setNr2] = useState("");
   const [afiseazaFelicitari, setAfiseazaFelicitari] = useState(false);
   const navigate = useNavigate();
 
@@ -23,7 +25,9 @@ function AdunarePage() {
         mesajElement.innerText = mesaj;
         document.getElementById("game-photo").src = calePoza;
       } else {
-        navigate("/FinishPage");
+        sessionStorage.setItem("mister", JSON.stringify(listaElemente));
+        sessionStorage.setItem("operation", "/adunare");
+        navigate("/CongratsPage");
       }
     } else {
       console.error("Elementul cu id-ul 'mesaj' nu a fost găsit.");
@@ -48,12 +52,35 @@ function AdunarePage() {
       randomNumar2 = Math.floor(Math.random() * randomNumar1);
     } while (randomNumar1 + randomNumar2 > 1000);
 
+    let formattedNr1, formattedNr2;
+
+    formattedNr1 = adaugaSpatii(String(randomNumar1));
+    formattedNr2 = adaugaSpatii(String(randomNumar2));
+
+    setNr1(formattedNr1);
+    setNr2(formattedNr2);
+
     setNumar1(randomNumar1);
     setNumar2(randomNumar2);
     setRezultat("");
     setIncercari(0);
     setAfiseazaFelicitari(false);
   };
+
+  function adaugaSpatii(string) {
+    if (string.length === 2) {
+      string = " " + string;
+      string = " " + string;
+    }
+    if (string.length === 1) {
+      string = " " + string;
+      string = " " + string;
+      string = " " + string;
+      string = " " + string;
+    }
+
+    return string;
+  }
 
   const calculeazaRezultat = () => {
     const suma = numar1 + numar2;
@@ -86,10 +113,10 @@ function AdunarePage() {
           <div className="content-container">
             <div className="align-left">
               <div className="numar">
-                <strong1>{numar1}</strong1> +
+                <strong1>{nr1}</strong1> +
               </div>
               <div className="numar">
-                <strong1>{numar2}</strong1>
+                <strong1>{nr2}</strong1>
               </div>
 
               <input
