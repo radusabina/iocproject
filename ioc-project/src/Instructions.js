@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Instructions.css";
 
@@ -8,6 +8,11 @@ function Instructions() {
   const handleButtonClick = (ruta) => {
     navigate(ruta);
   };
+
+  useEffect(() => {
+    // Returnează o funcție care va fi apelată când componenta este dezmontată
+    return () => {};
+  }, []);
 
   return (
     <div className="start">
