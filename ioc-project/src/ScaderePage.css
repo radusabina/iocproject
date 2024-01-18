@@ -28,6 +28,23 @@
   font-style: initial;
   font-size: 30px;
 }
+.incearca-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mai-incearca{
+  
+  color: rgb(18, 3, 16);
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 550px;
+  margin-top: -60px;
+}
+
 
 .ScaderePage strong {
   color: #f19808;
@@ -87,6 +104,13 @@
 }
 
 .game-photo {
+  margin-left: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.game-video {
   margin-left: 300px;
   max-width: 100%;
   height: auto;
