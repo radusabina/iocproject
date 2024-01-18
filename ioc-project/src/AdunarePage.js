@@ -19,20 +19,36 @@ function AdunarePage() {
 
   function schimbaElement() {
     const mesajElement = document.getElementById("message");
-    if (mesajElement) {
+    const videoElement = document.getElementById("game-video");
+    const photoElement = document.getElementById("game-photo");
+  
+    if (mesajElement && videoElement && photoElement) {
       if (index < listaElemente.length) {
-        const [mesaj, calePoza] = listaElemente[index];
+        const [mesaj, calePoza, caleVideo] = listaElemente[index];
         mesajElement.innerText = mesaj;
-        document.getElementById("game-photo").src = calePoza;
+  
+        // Verifica dacă există o cale video și imaginea
+        if (caleVideo && videoElement) {
+          // Elimina imaginea și actualizeaza sursa video
+          photoElement.style.display = "none";
+          videoElement.style.display = "block";
+          videoElement.src = caleVideo;
+        } else if (calePoza && photoElement) {
+          // Elimina videoul și actualizeaza sursa foto
+          videoElement.style.display = "none";
+          photoElement.style.display = "block";
+          photoElement.src = calePoza;
+        }
       } else {
         sessionStorage.setItem("mister", JSON.stringify(listaElemente));
         sessionStorage.setItem("operation", "/adunare");
         navigate("/CongratsPage");
       }
     } else {
-      console.error("Elementul cu id-ul 'mesaj' nu a fost găsit.");
+      console.error("Elementele nu au fost găsite.");
     }
   }
+  
 
   const navigateToStartPage = () => {
     navigate("/");
@@ -113,10 +129,10 @@ function AdunarePage() {
           <div className="content-container">
             <div className="align-left">
               <div className="numar">
-                <strong1>{nr1}</strong1> +
+                <strong>{nr1}</strong> +
               </div>
               <div className="numar">
-                <strong1>{nr2}</strong1>
+                <strong>{nr2}</strong>
               </div>
 
               <input
@@ -127,18 +143,24 @@ function AdunarePage() {
               <button onClick={handleVerifica}>Verifică</button>
             </div>
             <img className="game-photo" id="game-photo" />
+            <iframe 
+              id="game-video"
+              className="game-video"
+              title="YouTube video player" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen></iframe>
           </div>
         </div>
       </div>
       {parseInt(rezultat, 10) !== numar1 + numar2 &&
-        incercari > 0 &&
-        !afiseazaFelicitari && (
-          <div className="incearca-container">
-            <div className="mesaj-eroare">
-              <p>Mai încearcă! Vei reuși!</p>
-            </div>
-          </div>
-        )}
+  incercari > 0 &&
+  !afiseazaFelicitari && (
+    <div className="incearca-container">  
+        <div className="mai-incearca">
+          Mai încearcă, vei reuși!
+        </div>
+    </div>
+  )}
       <button className="go-to-start-button" onClick={navigateToStartPage}>
         înapoi
       </button>
