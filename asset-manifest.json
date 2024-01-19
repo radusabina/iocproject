@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zipy-app/static/css/main.92190e58.css",
+    "main.js": "/zipy-app/static/js/main.07a562aa.js",
+    "index.html": "/zipy-app/index.html",
+    "main.92190e58.css.map": "/zipy-app/static/css/main.92190e58.css.map",
+    "main.07a562aa.js.map": "/zipy-app/static/js/main.07a562aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92190e58.css",
+    "static/js/main.07a562aa.js"
+  ]
+}
