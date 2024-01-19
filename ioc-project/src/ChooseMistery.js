@@ -4,13 +4,11 @@ import "./ChooseMistery.css";
 
 function ChooseMistery() {
   var operation = sessionStorage.getItem("operation");
-  
 
   const misteryAloha = [
     [
       "Echipa misterelor ajunge pe plajele însorite din Hawaii pentru un cunoscut concurs de surf.",
-      "https://i.postimg.cc/bwmhpxqv/temp-Image-YSf1-TM.jpg",
-      "https://gemootest.s3.us-east-2.amazonaws.com/s/res/606563530735960064/4c9762548338a7f508c851ac7de83a3e.mp4?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARLZICB6QQHKRCV7K%2F20240118%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20240118T131453Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Signature=afced6de13214be33e9702ba57018c7cb8e3e37fa4ca2995ed9233909b7d2dfb",
+      "https://i.postimg.cc/NFhdHdX9/temp-Image0-Shus-U.jpg",
     ],
     [
       "În timp ce își cumpărau un totem Wiki-Tiki, află de la cel mai bun surfer al insulei că o fată, Snookie, a fost răpită de Wiki-Tiki.",
@@ -267,8 +265,6 @@ function ChooseMistery() {
   const navigateToStartPage = () => {
     navigate("/");
   };
-
-  
 
   return (
     <div className="start">

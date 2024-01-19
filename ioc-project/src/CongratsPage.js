@@ -297,7 +297,7 @@ function CongratsPage() {
             Alege alt mister
           </button>
           <button onClick={() => handleChangeOperationClick()}>
-            Schimbă operația
+            Alege operația
           </button>
         </div>
       </header>

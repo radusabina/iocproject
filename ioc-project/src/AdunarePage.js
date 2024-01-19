@@ -21,12 +21,12 @@ function AdunarePage() {
     const mesajElement = document.getElementById("message");
     const videoElement = document.getElementById("game-video");
     const photoElement = document.getElementById("game-photo");
-  
+
     if (mesajElement && videoElement && photoElement) {
       if (index < listaElemente.length) {
         const [mesaj, calePoza, caleVideo] = listaElemente[index];
         mesajElement.innerText = mesaj;
-  
+
         // Verifica dacă există o cale video și imaginea
         if (caleVideo && videoElement) {
           // Elimina imaginea și actualizeaza sursa video
@@ -48,7 +48,6 @@ function AdunarePage() {
       console.error("Elementele nu au fost găsite.");
     }
   }
-  
 
   const navigateToStartPage = () => {
     navigate("/");
@@ -143,24 +142,23 @@ function AdunarePage() {
               <button onClick={handleVerifica}>Verifică</button>
             </div>
             <img className="game-photo" id="game-photo" />
-            <iframe 
+            <iframe
               id="game-video"
               className="game-video"
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullScreen></iframe>
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
       {parseInt(rezultat, 10) !== numar1 + numar2 &&
-  incercari > 0 &&
-  !afiseazaFelicitari && (
-    <div className="incearca-container">  
-        <div className="mai-incearca">
-          Mai încearcă, vei reuși!
-        </div>
-    </div>
-  )}
+        incercari > 0 &&
+        !afiseazaFelicitari && (
+          <div className="incearca-container">
+            <div className="mai-incearca">Mai încearcă, vei reuși!</div>
+          </div>
+        )}
       <button className="go-to-start-button" onClick={navigateToStartPage}>
         înapoi
       </button>
