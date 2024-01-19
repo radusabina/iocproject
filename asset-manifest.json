@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ioc-project/static/css/main.92190e58.css",
-    "main.js": "/ioc-project/static/js/main.07a562aa.js",
-    "index.html": "/ioc-project/index.html",
-    "main.92190e58.css.map": "/ioc-project/static/css/main.92190e58.css.map",
-    "main.07a562aa.js.map": "/ioc-project/static/js/main.07a562aa.js.map"
+    "main.css": "/iocproject/ioc-project/src/static/css/main.92190e58.css",
+    "main.js": "/iocproject/ioc-project/src/static/js/main.07a562aa.js",
+    "index.html": "/iocproject/ioc-project/src/index.html",
+    "main.92190e58.css.map": "/iocproject/ioc-project/src/static/css/main.92190e58.css.map",
+    "main.07a562aa.js.map": "/iocproject/ioc-project/src/static/js/main.07a562aa.js.map"
   },
   "entrypoints": [
     "static/css/main.92190e58.css",
