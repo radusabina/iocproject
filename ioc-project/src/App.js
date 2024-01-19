@@ -50,7 +50,7 @@ function App() {
             Scădere
           </button>
           <button onClick={() => handleCombinedClick("/Instructions")}>
-            Operații combinate
+            Adunare și scădere
           </button>
         </div>
       </header>
